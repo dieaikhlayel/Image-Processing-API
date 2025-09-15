@@ -1,0 +1,46 @@
+[33mcommit cead8216ec30ba87bef4ac2ea4a7e0f1364ddba0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Diea <ironyui2110@gmail.com>
+Date:   Mon Sep 15 08:28:08 2025 +0300
+
+    Initial commit: Image Processing API project
+
+ .eslintignore                                  |   1 [32m+[m
+ .eslintrc                                      |  12 [32m++[m
+ .gitignore                                     |   4 [32m+[m
+ .prettierignore                                |   4 [32m+[m
+ .prettierrc.json                               |   6 [32m+[m
+ README.md                                      | 237 [32m+++++++++++++++++++++++++[m
+ launch.json                                    |  19 [32m++[m
+ nodemon.json                                   |   6 [32m+[m
+ package.json                                   |  46 [32m+++++[m
+ public/css/style.css                           |  10 [32m++[m
+ spec/support/jasmine.json                      |   7 [32m+[m
+ src/app.ts                                     |  33 [32m++++[m
+ src/images/full/3d.jpg                         | Bin [31m0[m -> [32m583402[m bytes
+ src/images/full/encenadaport.jpg               | Bin [31m0[m -> [32m2217250[m bytes
+ src/images/full/fjord.jpg                      | Bin [31m0[m -> [32m2421874[m bytes
+ src/images/full/icelandwaterfall.jpg           | Bin [31m0[m -> [32m1770079[m bytes
+ src/images/full/palmtunnel.jpg                 | Bin [31m0[m -> [32m2272149[m bytes
+ src/images/full/santamonica.jpg                | Bin [31m0[m -> [32m2230898[m bytes
+ src/images/full/stars.jpg                      | Bin [31m0[m -> [32m1629075[m bytes
+ src/images/thumbnails/3d14567x14567.jpg        | Bin [31m0[m -> [32m3715303[m bytes
+ src/images/thumbnails/3d7500x2650.jpg          | Bin [31m0[m -> [32m426157[m bytes
+ src/images/thumbnails/encenadaport700x400.jpg  | Bin [31m0[m -> [32m49714[m bytes
+ src/images/thumbnails/fjord1200x1200.jpg       | Bin [31m0[m -> [32m242057[m bytes
+ src/images/thumbnails/fjord700x400.jpg         | Bin [31m0[m -> [32m42624[m bytes
+ src/images/thumbnails/fjord7500x2650.jpg       | Bin [31m0[m -> [32m1160193[m bytes
+ src/images/thumbnails/palmtunnel2400x2400.jpg  | Bin [31m0[m -> [32m866405[m bytes
+ src/images/thumbnails/santamonica4800x4800.jpg | Bin [31m0[m -> [32m2001649[m bytes
+ src/routes/api/images.ts                       |  27 [32m+++[m
+ src/routes/api/pageNotFound.ts                 |   8 [32m+[m
+ src/routes/file.ts                             |  13 [32m++[m
+ src/routes/index.ts                            |  67 [32m+++++++[m
+ src/tests/helpers/reporter.ts                  |  36 [32m++++[m
+ src/tests/imageTransformsSpec.ts               |   7 [32m+[m
+ src/tests/indexSpec.ts                         |  12 [32m++[m
+ src/utils/imageTransforms.ts                   |  62 [32m+++++++[m
+ src/views/errors.ejs                           |   3 [32m+[m
+ src/views/index.ejs                            |  24 [32m+++[m
+ src/views/page-not-found.ejs                   |  21 [32m+++[m
+ tsconfig.json                                  |  17 [32m++[m
+ 39 files changed, 682 insertions(+)
