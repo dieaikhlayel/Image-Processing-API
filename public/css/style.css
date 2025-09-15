@@ -1,0 +1,10 @@
+.full-images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+}

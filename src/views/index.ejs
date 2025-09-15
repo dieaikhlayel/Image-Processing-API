@@ -1,0 +1,24 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <h1>ImageResizing API</h1>
+    <p>
+        This API allows you to resize images from a selection of images (see list below). To resize an images use the following syntax
+    </p>
+    <p>
+        http://localhost:3000/api/images?filename=<strong>FILENAME</strong>&height=<strong>HEIGHT</strong>&width=<strong>WIDTH</strong>
+    </p>
+    <p>
+        Maximum dimensions allowed are 65500x65500 but for performance reasons it is recommmended to stay below 10000x10000.
+    </p>
+    <div class="full-images-grid">
+        <% filenames.forEach((filename) => { %>
+            <div class="image">
+                <img src=<%='images/full/' + filename + '.jpg' %> style="height: 700px; width: 500px"/>
+                <%= `filename: ${filename}` %>
+            </div>
+            <% }) %>
+    </div>
+</body>
